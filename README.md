@@ -1,4 +1,4 @@
-![alt tag](https://raw.githubusercontent.com/nesbtesh/reactAdmin/master/photo.png)
+![alt text](https://raw.githubusercontent.com/nesbtesh/reactAdmin/master/photo.png)
 # React Admin Template
 
 **V1.0**
