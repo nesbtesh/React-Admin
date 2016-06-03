@@ -32,3 +32,6 @@ If webpack is not installed try installing with the code below.
 
 After running the above just go to http://localhost:8080
 
+## License
+
+**MIT**
