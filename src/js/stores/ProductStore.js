@@ -3,8 +3,10 @@ import { EventEmitter } from "events";
 import dispatcher from "../dispatcher";
 
 class ProductStore extends EventEmitter{
-	constructor(){
+	constructor()
+	{
 		super();
+		//DO NEVER DO THIS IN PRODUCTION THIS IS JUST FOR TESTING PURPOSES
 		this.products = {
 			  "count": 29,
 			  "next": 2,
@@ -135,7 +137,8 @@ class ProductStore extends EventEmitter{
 			};
 	}
 
-	createProduct(data){
+	createProduct(data)
+	{
 		const id = Date.now();
 		this.products.list.push({
 			  id: id,
@@ -150,11 +153,13 @@ class ProductStore extends EventEmitter{
 		this.emit("change");
 	}
 
-	getAll(){
+	getAll()
+	{
 		return this.products;
 	}
 
-	handleActions(action){
+	handleActions(action)
+	{
 
 		switch(action.type) {
 		

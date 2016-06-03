@@ -1,11 +1,12 @@
-import React from "react";
-
-import Title from "./Header/Title";
-import Tab from "./Header/Tab";
+import React 	from "react";
+import Title 	from "./Header/Title";
+import Tab 		from "./Header/Tab";
 
 
 export default class Header extends React.Component {
+	
 	render(){
+	
 		return(
 			<div class="top-nav">
 				<div class="wrap">

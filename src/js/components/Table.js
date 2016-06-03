@@ -1,23 +1,27 @@
-import React from "react";
-
-import Row from "./table/Row"
+import React 	from "react";
+import Row 		from "./table/Row"
 
 export default class Table extends React.Component {
 	
 	/***
 		This function takes all the non characters from the name 
 	***/
-	parseTitle(title){
-		if(this.props.hiddenRows.indexOf(title) === -1){
+	parseTitle(title)
+	{
+		
+		if(this.props.hiddenRows.indexOf(title) === -1)
+		{
 			title = title.replace(/_|\-/, " ");
-			return title;
+			return 	title;
 		}
+	
 	}
 	
 	/***
 		Create an array of indexes of columns that the user wants hidden
 	***/	
-	getHiddenIndex(hiddenRows, keys){
+	getHiddenIndex(hiddenRows, keys)
+	{
 		const hidden = [];
 		for (var i = hiddenRows.length - 1; i >= 0; i--) { hidden.push(keys.indexOf(hiddenRows[i])); }
 		return hidden;
@@ -35,9 +39,11 @@ export default class Table extends React.Component {
 		//get the keys of the array and use them as headers
 		const instace = this;
 		const theads = keys.map(function(title, i) {
+			
 			if(hiddenRows.indexOf(title) === -1){ 
 				return <th key={i+7000} >{instace.parseTitle(title)}</th>;
 			};
+
 		});
 
 		return (

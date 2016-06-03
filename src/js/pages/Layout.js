@@ -7,7 +7,8 @@ import Sidebar from "../components/Sidebar";
 
 export default class Layout extends React.Component {
 	
-	constructor() {
+	constructor() 
+	{
 	    super();
 	    this.state = {collapsed: true};
 	}
@@ -15,21 +16,25 @@ export default class Layout extends React.Component {
 	/***
 		Toggle collapse adds active class to the main wrapper on tablets and iphones
 	***/
-	toggleCollapse() {
+	toggleCollapse() 
+	{
 	    const collapsed = !this.state.collapsed;
 	    this.setState({collapsed});
 	}
 
-	navigate(){this.context.router.push(null, "/");}
+	navigate(){ this.context.router.push(null, "/"); }
 
-	render(){
+	render()
+	{
+		
 		const { collapsed } = this.state;
 		const navClass = collapsed ? "" : "active";
+		
 		return(
 			<div>
-				<Sidebar location={this.props.location} />
-				<div class={"main-wrapper " + navClass}>
-					<Header toggleClick={this.toggleCollapse.bind(this)} />
+				<Sidebar location={ this.props.location } />
+				<div class={ "main-wrapper " + navClass }>
+					<Header toggleClick={ this.toggleCollapse.bind(this) } />
 					<div class="main-content">
 						{ this.props.children }
 					</div>

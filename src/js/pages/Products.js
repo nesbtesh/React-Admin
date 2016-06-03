@@ -7,7 +7,8 @@ import * as ProductActions from "../actions/ProductActions";
 
 export default class Products extends React.Component {
 	
-	constructor(){
+	constructor()
+	{
 		super();
 		this.getProducts = this.getProducts.bind(this);
 		this.state ={
@@ -15,30 +16,32 @@ export default class Products extends React.Component {
 		};
 	}
 
-	componentWillMount() {
+	componentWillMount() 
+	{
 		ProductStore.on("change", this.getProducts);
 	}
 
-	componentWillUnmount(){
+	componentWillUnmount()
+	{
 		ProductStore.removeListener("change", this.getProducts);
 	}
 
-	getProducts(){
+	getProducts()
+	{
 		this.setState({
 			products: ProductStore.getAll(),
 		});
 	}
 
-	reloadProducts(){
+	reloadProducts()
+	{
   		ProductActions.reloadProducts();
   	}
 
-	render(){ 
-		
+	render()
+	{ 
 		return (
-	     <div class="products-div ">
-	    
-	     </div>
+	    	<h1>Products</h1>
 		);
 	}
 }

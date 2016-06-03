@@ -7,7 +7,10 @@ import Dashboard from "./pages/Dashboard";
 import Layout from "./pages/Layout";
 import Archives from "./pages/Archives";
 import Products from "./pages/Products";
-
+import Cupons from "./pages/Cupons";
+import Reports from "./pages/Reports";
+import Reviews from "./pages/Reviews";
+import Withdraw from "./pages/Withdraw";
 
 const app = document.getElementById('app')
 
@@ -18,6 +21,10 @@ ReactDOM.render(
 			<Route path="archives(/:article)" component={Archives}></Route>
 			<Route path="settings" component={Settings}></Route>
 			<Route path="products" component={Products}></Route>
+			<Route path="cupons" component={Cupons}></Route>
+			<Route path="reports" component={Reports}></Route>
+			<Route path="reviews" component={Reviews}></Route>
+			<Route path="withdraw" component={Withdraw}></Route>
 		</Route>
 	</Router>
 	, app)

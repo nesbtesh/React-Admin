@@ -7,7 +7,8 @@ import Orders from "../components/dashboard/Orders"
 
 export default class Dashboard extends React.Component {
 	
-	render(){
+	render()
+	{
 		
 		return(
 			<div>

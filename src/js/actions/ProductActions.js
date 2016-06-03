@@ -1,5 +1,5 @@
-import dispatcher from "../dispatcher";
-import axios from "axios";
+import dispatcher 	from "../dispatcher";
+import axios 		from "axios";
 
 export function createProduct(data) {
 	dispatcher.dispatch({
@@ -20,6 +20,7 @@ export function reloadProducts(){
 	dispatcher.dispatch({
 		type: "FETCH_PRODUCTS",
 	});
+
 	axios.get("https://sompage.com/")
 		
 		.then(function (data) {
@@ -36,6 +37,6 @@ export function reloadProducts(){
 			if (response instanceof Error) {
 		     	alert(response);
 		    } 
+		    
 		});
-
 }

@@ -1,8 +1,7 @@
-import React from "react";
-
-import Tab from "../Tab";
-import Comment from "./Comment";
-import Order from "./Order";
+import React 	from "react";
+import Tab 		from "../Tab";
+import Comment 	from "./Comment";
+import Order 	from "./Order";
 
 export default class Orders extends React.Component {
 

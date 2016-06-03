@@ -1,20 +1,21 @@
 import React from "react";
-
 import PageTabs from "./Sidebar/PageTabs"
 
 export default class Sidebar extends React.Component {
 	
 	constructor() {
+	    
 	    super();
-	    this.state = {
-	      collapsed: true,
-	    };
+	    this.state = { collapsed: true };
+	
 	}
 	
 	//Toggle class active from the user menu
 	toggleCollapse() {
+	    
 	    const collapsed = !this.state.collapsed;
 	    this.setState({collapsed});
+	
 	}
 	
 	render(){

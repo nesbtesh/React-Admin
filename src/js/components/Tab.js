@@ -4,7 +4,9 @@ import React from "react";
  This class creates a sliding tab
 ***/
 export default class Tab extends React.Component {
+	
 	render(){
+		
 		return(  
 		   <div class="tab">
 		       <input type="radio" id={ this.props.id } name={this.props.group} defaultChecked={this.props.checked}  />
@@ -15,5 +17,6 @@ export default class Tab extends React.Component {
 		       </div> 
 		   </div>
 		);
+	
 	}
 }

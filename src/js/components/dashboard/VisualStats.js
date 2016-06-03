@@ -1,6 +1,5 @@
-import React from "react";
-
-import Stat from "./visualstats/Stat"
+import React 	from "react";
+import Stat 	from "./visualstats/Stat"
 
 export default class VisualStats extends React.Component {
 	

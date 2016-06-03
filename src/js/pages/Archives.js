@@ -2,7 +2,8 @@ import React from "react";
 
 
 export default class Archives extends React.Component {
-	render(){
+	render()
+	{
 		return(
 			<div>
 				<h1>Archives</h1>

@@ -2,7 +2,8 @@ import React from "react";
 
 
 export default class Stat extends React.Component {
-	render(){
+	render()
+	{
 		
 		var { number, fancyClass, title } = this.props;
 		fancyClass = fancyClass + " dashboard-visual";
