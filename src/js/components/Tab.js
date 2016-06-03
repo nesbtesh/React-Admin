@@ -1,5 +1,8 @@
 import React from "react";
 
+/***
+ This class creates a sliding tab
+***/
 export default class Tab extends React.Component {
 	render(){
 		return(  

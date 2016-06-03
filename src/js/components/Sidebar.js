@@ -3,6 +3,7 @@ import React from "react";
 import PageTabs from "./Sidebar/PageTabs"
 
 export default class Sidebar extends React.Component {
+	
 	constructor() {
 	    super();
 	    this.state = {
@@ -10,14 +11,17 @@ export default class Sidebar extends React.Component {
 	    };
 	}
 	
+	//Toggle class active from the user menu
 	toggleCollapse() {
 	    const collapsed = !this.state.collapsed;
 	    this.setState({collapsed});
 	}
 	
 	render(){
+	
 		const { collapsed } = this.state;
 		const navClass = collapsed ? "" : "active";
+	
 		return(
 			<div class="sidebar scrollable-container">
 				<div class="logo">

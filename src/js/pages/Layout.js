@@ -6,21 +6,21 @@ import Footer from "../components/Footer"
 import Sidebar from "../components/Sidebar";
 
 export default class Layout extends React.Component {
+	
 	constructor() {
 	    super();
-	    this.state = {
-	      collapsed: true,
-	    };
+	    this.state = {collapsed: true};
 	}
-	
+
+	/***
+		Toggle collapse adds active class to the main wrapper on tablets and iphones
+	***/
 	toggleCollapse() {
 	    const collapsed = !this.state.collapsed;
 	    this.setState({collapsed});
 	}
 
-	navigate(){
-		this.context.router.push(null, "/");
-	}
+	navigate(){this.context.router.push(null, "/");}
 
 	render(){
 		const { collapsed } = this.state;

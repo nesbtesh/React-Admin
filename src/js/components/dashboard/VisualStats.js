@@ -3,6 +3,7 @@ import React from "react";
 import Stat from "./visualstats/Stat"
 
 export default class VisualStats extends React.Component {
+	
 	render(){
 		return (
 	    	<div class="row last-visual">

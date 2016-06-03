@@ -227,8 +227,6 @@ footer button{
 .page-tab li{
 	display: inline-block;
 	width: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
 	cursor: pointer;
 }
 .page-tab li a{
@@ -237,6 +235,7 @@ footer button{
 	font-size: 18px;
 	text-transform: capitalize;
 	cursor: pointer;
+	display: block;
 }
 .page-tab span, .page-tab i{
 	color: #ffffff;
@@ -246,7 +245,7 @@ footer button{
 	float: left;
 	font-size: 28px;
 	line-height: 55px;
-	margin-right: 10px;
+	margin-right: 30px;
 	margin-top: -2px;
 }
 .dashboard-visual{
