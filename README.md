@@ -44,10 +44,12 @@ To add a configuration file just go to webpack.config.js and add the code below.
 
 To access your configuration file just do the following:
 
-'''
-	import Config from "Config"
-	Config.settingName
-'''
+```js
+	import Config from "Config";
+	
+	//then to access the setting just go:
+	Config.settingName;
+```
 
 ## License
 
