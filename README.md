@@ -32,6 +32,24 @@ If webpack is not installed try installing with the code below.
 
 After running the above just go to http://localhost:8080
 
+## Adding a configuration file
+
+To add a configuration file just go to webpack.config.js and add the code below. Also don't forget to add the two json file with your variables.
+
+```js
+	externals: {
+   		'Config': JSON.stringify(process.env.NODE_ENV ? require('./config.prod.json') : require('./config.dev.json'))
+  	}
+```
+
+To access your configuration file just do the following:
+
+'''
+	import Config from "Config";
+
+	Config.settingName
+'''
+
 ## License
 
 **MIT**
